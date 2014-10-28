@@ -5,6 +5,8 @@ public class Account {
 	private int balance;
 	
 	public int getBalance() {
+		if (balance < 0)
+			balance = 0;
 		return balance;
 	}
 	
