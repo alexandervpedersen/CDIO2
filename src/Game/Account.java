@@ -15,7 +15,10 @@ public class Account {
 	}
 	
 	public void addBalance(int add) {
-		this.balance = this.balance + add;
+		if (balance < 0)
+			this.balance = add;
+		else
+			this.balance = this.balance + add;
 	}
 	
 	public String toString() {
