@@ -15,5 +15,6 @@ public class Account {
 	public void addBalance(int add) {
 		this.balance = this.balance + add;
 	}
+	
 
 }
