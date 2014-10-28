@@ -16,5 +16,8 @@ public class Account {
 		this.balance = this.balance + add;
 	}
 	
+	public String toString() {
+		return ("Current balance: " + getBalance());
+	}
 
 }
